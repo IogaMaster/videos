@@ -1,3 +1,5 @@
+// Catppuccin Mocha (Dark)
+
 export const Colors = {
     text: '#cdd6f4',
     background: '#11111b',
