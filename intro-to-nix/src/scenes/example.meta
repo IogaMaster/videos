@@ -1,0 +1,70 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "nix_logo",
+      "targetTime": 0
+    },
+    {
+      "name": "three_things",
+      "targetTime": 3.173077288566329
+    },
+    {
+      "name": "programming_language",
+      "targetTime": 5.173077288566329
+    },
+    {
+      "name": "package_manager",
+      "targetTime": 6.627812186099215
+    },
+    {
+      "name": "operating_system",
+      "targetTime": 7.43772135567064
+    },
+    {
+      "name": "not_need",
+      "targetTime": 8.357228918316903
+    },
+    {
+      "name": "let_me_show_you",
+      "targetTime": 17.297885423529898
+    },
+    {
+      "name": "import_nixpkgs",
+      "targetTime": 25.437883449081276
+    },
+    {
+      "name": "make_shell",
+      "targetTime": 28.690342267919334
+    },
+    {
+      "name": "nativeBuildInputs",
+      "targetTime": 31.91533359756512
+    },
+    {
+      "name": "add_zig_zls",
+      "targetTime": 35.6915059991855
+    },
+    {
+      "name": "buildInputs",
+      "targetTime": 38.85658634274709
+    },
+    {
+      "name": "add_sdl2",
+      "targetTime": 41.45364199810628
+    },
+    {
+      "name": "nix-shell",
+      "targetTime": 50.455896709508366
+    },
+    {
+      "name": "end_shell",
+      "targetTime": 57.72068669129366
+    },
+    {
+      "name": "end",
+      "targetTime": 70.50593722899029
+    }
+  ],
+  "seed": 164989897
+}

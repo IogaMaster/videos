@@ -1,0 +1,19 @@
+{
+  "name": "IntroToNix",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@motion-canvas/core": "^3.6.1",
+    "@motion-canvas/2d": "^3.6.2"
+  },
+  "devDependencies": {
+    "@motion-canvas/ui": "^3.6.1",
+    "@motion-canvas/vite-plugin": "^3.4.0",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4"
+  }
+}
