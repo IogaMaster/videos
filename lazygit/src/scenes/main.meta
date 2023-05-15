@@ -1,0 +1,102 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "lazygit",
+      "targetTime": 2.19663800022644
+    },
+    {
+      "name": "lazygit is a ui",
+      "targetTime": 4.376951088769662
+    },
+    {
+      "name": "first install lazygit",
+      "targetTime": 13.736951088769661
+    },
+    {
+      "name": "when you open",
+      "targetTime": 17.6654529165611
+    },
+    {
+      "name": "status",
+      "targetTime": 19.982826469276247
+    },
+    {
+      "name": "changes",
+      "targetTime": 21.823741678011885
+    },
+    {
+      "name": "branches",
+      "targetTime": 23.587636411531356
+    },
+    {
+      "name": "commit history",
+      "targetTime": 25.498667861583268
+    },
+    {
+      "name": "stashed files",
+      "targetTime": 26.79497040641919
+    },
+    {
+      "name": "diff view",
+      "targetTime": 28.01277997429228
+    },
+    {
+      "name": "hide_highlight",
+      "targetTime": 29.246378717149422
+    },
+    {
+      "name": "lazygit showcase",
+      "targetTime": 34.28305555737276
+    },
+    {
+      "name": "a key",
+      "targetTime": 35.22628437651065
+    },
+    {
+      "name": "space key",
+      "targetTime": 42.01710175543121
+    },
+    {
+      "name": "enter",
+      "targetTime": 46.12648982018474
+    },
+    {
+      "name": "space ke",
+      "targetTime": 48.481670420767806
+    },
+    {
+      "name": "c key",
+      "targetTime": 53.66763515871454
+    },
+    {
+      "name": "enter2",
+      "targetTime": 56.01423959364917
+    },
+    {
+      "name": "Shift+P",
+      "targetTime": 58.862383455326686
+    },
+    {
+      "name": "p",
+      "targetTime": 62.32531758204385
+    },
+    {
+      "name": "shift d then x",
+      "targetTime": 66.41922066498593
+    },
+    {
+      "name": "q",
+      "targetTime": 70.1248351594819
+    },
+    {
+      "name": "outro",
+      "targetTime": 71.23682300498618
+    },
+    {
+      "name": "End",
+      "targetTime": 80.82060561499107
+    }
+  ],
+  "seed": 3776647046
+}

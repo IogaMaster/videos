@@ -1,5 +1,9 @@
 // Catppuccin Mocha (Dark)
 
+export function setupView(view: any) {
+    view.fill(Colors.background);
+}
+
 export const Colors = {
     text: '#cdd6f4',
     background: '#11111b',
@@ -19,4 +23,12 @@ export const BaseFont = {
 export const WhiteLabel = {
     ...BaseFont,
     fill: Colors.text,
+};
+
+export const Container = {
+    fill: Colors.base,
+    gap: 58,
+    radius: 20,
+    padding: 10,
+    layout: true,
 };
