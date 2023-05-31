@@ -1,0 +1,98 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "nix fly down",
+      "targetTime": 0.9594882104877261
+    },
+    {
+      "name": "experimental feature",
+      "targetTime": 3.264464827911914
+    },
+    {
+      "name": "inputs and outputs",
+      "targetTime": 6.977188159078512
+    },
+    {
+      "name": "pinned",
+      "targetTime": 9.394135697692219
+    },
+    {
+      "name": "enable flakes",
+      "targetTime": 14.300540279300236
+    },
+    {
+      "name": "add this to your nix.conf",
+      "targetTime": 16.929938250515242
+    },
+    {
+      "name": "two options",
+      "targetTime": 28.275066138204373
+    },
+    {
+      "name": "basic flake",
+      "targetTime": 30.170457964975114
+    },
+    {
+      "name": "add nixpkgs",
+      "targetTime": 37.28867507049391
+    },
+    {
+      "name": "also alias",
+      "targetTime": 39.20884122431543
+    },
+    {
+      "name": "creating a development environment",
+      "targetTime": 41.59010433588867
+    },
+    {
+      "name": "add devshells set",
+      "targetTime": 45.035110033736785
+    },
+    {
+      "name": "arch",
+      "targetTime": 47.93284335161367
+    },
+    {
+      "name": "name",
+      "targetTime": 50.12135954665969
+    },
+    {
+      "name": "building a package is simple",
+      "targetTime": 56.532991158793095
+    },
+    {
+      "name": "flake-utils first mention",
+      "targetTime": 64.90881869226102
+    },
+    {
+      "name": "add flake utils",
+      "targetTime": 71.54896760827924
+    },
+    {
+      "name": "make your outputs look like this",
+      "targetTime": 77.45812720646933
+    },
+    {
+      "name": "add the outputs",
+      "targetTime": 82.7498948869581
+    },
+    {
+      "name": "outputs",
+      "targetTime": 85.99577872720249
+    },
+    {
+      "name": "outro",
+      "targetTime": 92.23656040272772
+    },
+    {
+      "name": "thanks for watching",
+      "targetTime": 94.69196894353524
+    },
+    {
+      "name": "end",
+      "targetTime": 99.03542337364907
+    }
+  ],
+  "seed": 219693502
+}
