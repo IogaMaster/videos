@@ -1,0 +1,58 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "make",
+      "targetTime": 0.5529880924916079
+    },
+    {
+      "name": "makefiles",
+      "targetTime": 2.678100484553246
+    },
+    {
+      "name": "just",
+      "targetTime": 8.653061893024612
+    },
+    {
+      "name": "errors",
+      "targetTime": 20.010793524853874
+    },
+    {
+      "name": "circular",
+      "targetTime": 21.87879949607964
+    },
+    {
+      "name": "simplicity",
+      "targetTime": 26.009542239710033
+    },
+    {
+      "name": "python",
+      "targetTime": 37.05722908734606
+    },
+    {
+      "name": "nodejs",
+      "targetTime": 37.29085323711154
+    },
+    {
+      "name": "real-world",
+      "targetTime": 50.57712923780884
+    },
+    {
+      "name": "c-project",
+      "targetTime": 53.06859979700521
+    },
+    {
+      "name": "-r flag",
+      "targetTime": 67.65404487423596
+    },
+    {
+      "name": "outro",
+      "targetTime": 107.96599638844864
+    },
+    {
+      "name": "end",
+      "targetTime": 117.52710017904295
+    }
+  ],
+  "seed": 1639135026
+}
