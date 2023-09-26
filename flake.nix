@@ -15,7 +15,7 @@
             nodePackages.typescript-language-server
             nodejs
 
-            vhs
+            just
           ];
 
           buildInputs = with pkgs; [ ];

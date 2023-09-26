@@ -1,7 +1,8 @@
 {
-  "name": "stream-graphics",
-  "private": true,
+  "name": "components",
   "version": "0.0.0",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
   "scripts": {
     "serve": "vite",
     "build": "tsc && vite build"
@@ -9,8 +10,7 @@
   "dependencies": {
     "@motion-canvas/core": "^3.10.0",
     "@motion-canvas/2d": "^3.10.1",
-    "@motion-canvas/ffmpeg": "^1.1.0",
-    "components": "workspace:*"
+    "@motion-canvas/ffmpeg": "^1.1.0"
   },
   "devDependencies": {
     "@motion-canvas/ui": "^3.10.0",
