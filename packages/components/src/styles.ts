@@ -8,6 +8,8 @@ export const Colors = {
   text: "#cdd6f4",
   background: "#11111b",
   base: "#1e1e2e",
+  mantle: "#181825",
+  crust: "11111b",
 
   red: "#f38ba8",
   green: "#a6e3a1",
