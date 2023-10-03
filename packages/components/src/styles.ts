@@ -59,12 +59,10 @@ export const CodeStyle = {
     lineHeight: 16 * 3.25,
     theme: {
         stringContent: { text: Colors.green },
-        stringPunctuation: { text: "#9ece6a" },
-        parameter: { text: "#e0af68" },
-        comment: { text: "#565f89" },
-        regexpContent: { text: "#e0af68" },
-        literal: { text: "#ff9e64" },
-        keyword: { text: "#bb9af7" },
-        entityName: { text: "#7aa2f7" },
+        stringPunctuation: { text: Colors.green },
+        comment: { text: Colors.overlay0 },
+        literal: { text: Colors.peach },
+        keyword: { text: Colors.lavender },
+        entityName: { text: Colors.red },
     },
 };
