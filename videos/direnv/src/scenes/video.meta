@@ -1,0 +1,102 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "direnv",
+      "targetTime": 0.6
+    },
+    {
+      "name": "files",
+      "targetTime": 13.537915609763635
+    },
+    {
+      "name": "envrc",
+      "targetTime": 16.32128302971739
+    },
+    {
+      "name": "signif",
+      "targetTime": 18.83120427238015
+    },
+    {
+      "name": "switching",
+      "targetTime": 26.324852001709605
+    },
+    {
+      "name": "stopvideo",
+      "targetTime": 35.6528047574722
+    },
+    {
+      "name": "package",
+      "targetTime": 38.162040534837395
+    },
+    {
+      "name": "shell conf",
+      "targetTime": 39.40108609879474
+    },
+    {
+      "name": "quiet",
+      "targetTime": 44.37260118419388
+    },
+    {
+      "name": "highlight normal",
+      "targetTime": 47.42788150887212
+    },
+    {
+      "name": "envrcfileediting",
+      "targetTime": 49.20687456793797
+    },
+    {
+      "name": "approve",
+      "targetTime": 55.765451856987895
+    },
+    {
+      "name": "nix",
+      "targetTime": 68.47291854894742
+    },
+    {
+      "name": "nix-direnv",
+      "targetTime": 71.37139459425056
+    },
+    {
+      "name": "using",
+      "targetTime": 88.40497595220663
+    },
+    {
+      "name": "shell or default",
+      "targetTime": 92.54334477336265
+    },
+    {
+      "name": "nonstandard name",
+      "targetTime": 96.95482890137647
+    },
+    {
+      "name": "if",
+      "targetTime": 99.30688944906872
+    },
+    {
+      "name": "flake",
+      "targetTime": 101.46720658387875
+    },
+    {
+      "name": "editors",
+      "targetTime": 104.24069436594193
+    },
+    {
+      "name": "outro",
+      "targetTime": 108.9076500317657
+    },
+    {
+      "name": "kofi",
+      "targetTime": 112.77454884529627
+    },
+    {
+      "name": "discord",
+      "targetTime": 117.26817307286316
+    },
+    {
+      "name": "done",
+      "targetTime": 118.74824982345899
+    }
+  ],
+  "seed": 1089452668
+}
