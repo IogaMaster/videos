@@ -10,7 +10,7 @@
     "@motion-canvas/core": "^3.8.0",
     "@motion-canvas/2d": "^3.8.0",
     "@motion-canvas/ffmpeg": "^1.1.0",
-    "components": "workspace:*"
+    "components": "0.0.0"
 
   },
   "devDependencies": {

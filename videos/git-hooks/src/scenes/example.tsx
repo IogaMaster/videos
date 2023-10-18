@@ -1,8 +1,12 @@
-import {makeScene2D} from '@motion-canvas/2d';
-import {waitFor} from '@motion-canvas/core';
+import { makeScene2D } from '@motion-canvas/2d';
+import { waitFor } from '@motion-canvas/core';
 
-export default makeScene2D(function* (view) {
-  // Create your animations here
+import { setupView } from "components"
 
-  yield* waitFor(5);
+
+export default makeScene2D(function*(view) {
+    // Create your animations here
+    setupView(view);
+
+    yield* waitFor(5);
 });
