@@ -1,5 +1,62 @@
 {
   "version": 0,
-  "timeEvents": [],
+  "timeEvents": [
+    {
+      "name": "git-hook enter",
+      "targetTime": 0.8509889691629327
+    },
+    {
+      "name": "remove git-hook",
+      "targetTime": 8.33153428378006
+    },
+    {
+      "name": "types",
+      "targetTime": 13.17854859699387
+    },
+    {
+      "name": "pre",
+      "targetTime": 14.279838250893999
+    },
+    {
+      "name": "post",
+      "targetTime": 15.07268710030245
+    },
+    {
+      "name": "push",
+      "targetTime": 15.772687100302448
+    },
+    {
+      "name": "remove list",
+      "targetTime": 19.779022650311695
+    },
+    {
+      "name": "hooks dir",
+      "targetTime": 21.65812699044907
+    },
+    {
+      "name": "sample",
+      "targetTime": 25.65812699044907
+    },
+    {
+      "name": "stylua check",
+      "targetTime": 30.104856343249757
+    },
+    {
+      "name": "no main",
+      "targetTime": 37.99969331087854
+    },
+    {
+      "name": "this hook checks",
+      "targetTime": 43.444250344362295
+    },
+    {
+      "name": "after",
+      "targetTime": 48.13036440888856
+    },
+    {
+      "name": "fail",
+      "targetTime": 52.47899016356176
+    }
+  ],
   "seed": 554980208
 }
