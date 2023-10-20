@@ -11,6 +11,7 @@
   "packageManager": "npm@9.6.7",
   "workspaces": [
     "videos/*",
+    "shorts/*",
     "packages/*"
   ]
 }

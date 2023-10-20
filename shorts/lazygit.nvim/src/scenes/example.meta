@@ -1,0 +1,126 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "lazygit",
+      "targetTime": 0.026925789585319312
+    },
+    {
+      "name": "integrates",
+      "targetTime": 0.8269257895853193
+    },
+    {
+      "name": "amazing",
+      "targetTime": 1.2269257895853194
+    },
+    {
+      "name": "lazygit plugin",
+      "targetTime": 1.846927731302303
+    },
+    {
+      "name": "right into",
+      "targetTime": 2.739997996617781
+    },
+    {
+      "name": "installing",
+      "targetTime": 4.008537206881186
+    },
+    {
+      "name": "simple",
+      "targetTime": 4.308537206881186
+    },
+    {
+      "name": "config",
+      "targetTime": 4.808537206881186
+    },
+    {
+      "name": "lazy",
+      "targetTime": 5.707253984251659
+    },
+    {
+      "name": "packer",
+      "targetTime": 6.830141147379224
+    },
+    {
+      "name": "vim plug",
+      "targetTime": 7.355594755765841
+    },
+    {
+      "name": "plugin name",
+      "targetTime": 8.801991883121866
+    },
+    {
+      "name": "number",
+      "targetTime": 9.997568699375693
+    },
+    {
+      "name": "configuration",
+      "targetTime": 10.658062185278157
+    },
+    {
+      "name": "options",
+      "targetTime": 11.055437189751114
+    },
+    {
+      "name": "configurable",
+      "targetTime": 11.640684582322915
+    },
+    {
+      "name": "both lua",
+      "targetTime": 12.342981453409077
+    },
+    {
+      "name": "vimscoprs",
+      "targetTime": 13.01183561634828
+    },
+    {
+      "name": "i set a",
+      "targetTime": 13.964952798536645
+    },
+    {
+      "name": "in my",
+      "targetTime": 14.458232743704308
+    },
+    {
+      "name": "to run lazygit",
+      "targetTime": 15.64348013627611
+    },
+    {
+      "name": "with",
+      "targetTime": 16.270530914031614
+    },
+    {
+      "name": "whats your",
+      "targetTime": 17.62978339168076
+    },
+    {
+      "name": "favorite",
+      "targetTime": 18.040390910970608
+    },
+    {
+      "name": "neovim plugin",
+      "targetTime": 18.408521790333918
+    },
+    {
+      "name": "how",
+      "targetTime": 19.399643388619754
+    },
+    {
+      "name": "impove",
+      "targetTime": 19.41631005528642
+    },
+    {
+      "name": "editing",
+      "targetTime": 19.883553094478312
+    },
+    {
+      "name": "remove text",
+      "targetTime": 20.839131187134473
+    },
+    {
+      "name": "done",
+      "targetTime": 22.51072302441858
+    }
+  ],
+  "seed": 1076826800
+}
