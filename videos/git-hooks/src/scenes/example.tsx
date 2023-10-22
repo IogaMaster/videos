@@ -33,8 +33,6 @@ export default makeScene2D(function*(view) {
     yield* waitUntil("remove git-hook");
     yield* slideOut(gitHook, [0, 1000])
 
-
-
     yield* waitUntil("types");
     const langRef = createRef<Txt>();
     const packRef = createRef<Txt>();

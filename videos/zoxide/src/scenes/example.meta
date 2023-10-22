@@ -1,0 +1,78 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "filetree in",
+      "targetTime": 0.4558467961942597
+    },
+    {
+      "name": "zoxide is",
+      "targetTime": 3.5488428376672982
+    },
+    {
+      "name": "end scroll",
+      "targetTime": 8.17283565728572
+    },
+    {
+      "name": "logs",
+      "targetTime": 8.877464941311436
+    },
+    {
+      "name": "database",
+      "targetTime": 12.100550012664653
+    },
+    {
+      "name": "selects",
+      "targetTime": 16.1801944025986
+    },
+    {
+      "name": "remove",
+      "targetTime": 19.905006641125862
+    },
+    {
+      "name": "web",
+      "targetTime": 22.27986836717307
+    },
+    {
+      "name": "stopvideo",
+      "targetTime": 25.571479293703433
+    },
+    {
+      "name": "package",
+      "targetTime": 30.287942188229128
+    },
+    {
+      "name": "hook",
+      "targetTime": 32.082171199108515
+    },
+    {
+      "name": "closeWindow",
+      "targetTime": 35.7185061005345
+    },
+    {
+      "name": "open terminal",
+      "targetTime": 37.50222185228011
+    },
+    {
+      "name": "endvideo",
+      "targetTime": 66.86310064194313
+    },
+    {
+      "name": "closewindow",
+      "targetTime": 70.59845121715745
+    },
+    {
+      "name": "popup logo",
+      "targetTime": 72.27373331119531
+    },
+    {
+      "name": "cripplerblood",
+      "targetTime": 77.47751073494955
+    },
+    {
+      "name": "cripplerblood out",
+      "targetTime": 82.11939937182557
+    }
+  ],
+  "seed": 3214898785
+}

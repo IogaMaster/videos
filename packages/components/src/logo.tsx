@@ -33,18 +33,20 @@ export class Logo extends Node {
         });
 
         this.add(
-            <Rect ref={this.logoContainerRef} scale={1} y={0} zIndex={-15}>
+            <Rect ref={this.logoContainerRef} scale={1} y={0} zIndex={99999}>
                 <Circle
                     width={() => this.radius()}
                     height={() => this.radius()}
                     fill={Colors.text}
+                    zIndex={99999}
                 />
-                <Img src={profile} scale={2 * this.logoScale()} radius={360} />
+                <Img src={profile} scale={2 * this.logoScale()} radius={360} zIndex={99999} />
                 <Txt
                     {...WhiteLabel}
                     ref={this.textRef}
                     fontSize={98}
                     y={390}
+                    zIndex={99999}
                 >
                     IogaMaster
                 </Txt>
