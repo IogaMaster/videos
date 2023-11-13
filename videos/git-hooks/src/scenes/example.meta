@@ -55,7 +55,19 @@
     },
     {
       "name": "fail",
-      "targetTime": 52.47899016356176
+      "targetTime": 50.89735187464279
+    },
+    {
+      "name": "end video",
+      "targetTime": 61.1630908703018
+    },
+    {
+      "name": "logo back",
+      "targetTime": 74.73792566430954
+    },
+    {
+      "name": "end",
+      "targetTime": 84.52558990817849
     }
   ],
   "seed": 554980208

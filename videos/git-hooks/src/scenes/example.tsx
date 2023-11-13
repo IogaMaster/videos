@@ -1,4 +1,4 @@
-import { Img, Layout, makeScene2D, Rect, Txt } from '@motion-canvas/2d';
+import { Img, Layout, makeScene2D, Rect, Txt, Video } from '@motion-canvas/2d';
 import { all, createRef, delay, easeInOutCubic, Vector2, waitFor, waitUntil } from '@motion-canvas/core';
 
 import { CodeStyle, Logo, setupView, slideIn, slideOut, Window } from "components"
@@ -15,6 +15,8 @@ import gitHookImage from "../assets/git-hook.svg";
 import dirImage from "../assets/dir.png";
 import sampleImage from "../assets/sample.png";
 import branchesImage from "../assets/branches.png";
+import hookMp4 from "../assets/hook.mp4";
+
 
 
 export default makeScene2D(function*(view) {
@@ -164,10 +166,20 @@ fi`)}
     yield* waitFor(2);
     yield* codeBlockRef().selection(lines(0, 3000), 0.3)
 
+
     yield* waitUntil("fail")
     yield* windowRef().close()
 
+    const hookVideo = createRef<Video>();
+    view.add(<Video src={hookMp4} ref={hookVideo} scale={1.4} y={-2000} />)
+    yield hookVideo().play()
+    yield* slideIn(hookVideo)
 
+    yield* waitUntil("end video")
+    yield* slideOut(hookVideo, [0, 2000])
 
-    yield* waitFor(120);
+    yield* waitUntil("logo back")
+    yield* logo().animateToCenter()
+
+    yield* waitUntil("end")
 });
