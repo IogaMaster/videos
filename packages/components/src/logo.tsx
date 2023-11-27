@@ -40,7 +40,7 @@ export class Logo extends Node {
                     fill={Colors.text}
                     zIndex={99999}
                 />
-                <Img src={profile} scale={2 * this.logoScale()} radius={360} zIndex={99999} />
+                <Img src={profile} scale={1.1 * this.logoScale()} radius={360} zIndex={99999} />
                 <Txt
                     {...WhiteLabel}
                     ref={this.textRef}
