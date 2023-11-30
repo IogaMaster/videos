@@ -7,23 +7,187 @@
     },
     {
       "name": "monolithic",
-      "targetTime": 23.83209129729798
+      "targetTime": 23.098195923388175
     },
     {
       "name": "config",
-      "targetTime": 25.623079018673483
+      "targetTime": 25.53134209693476
     },
     {
       "name": "hardware",
-      "targetTime": 26.823079018673482
+      "targetTime": 26.73134209693476
     },
     {
       "name": "remove list",
-      "targetTime": 30.67095249156715
+      "targetTime": 30.579215569828428
     },
     {
       "name": "flakes",
-      "targetTime": 38.78638836286205
+      "targetTime": 37.781422419878886
+    },
+    {
+      "name": "other flake",
+      "targetTime": 43.26500300734979
+    },
+    {
+      "name": "repo",
+      "targetTime": 44.26500300734979
+    },
+    {
+      "name": "packages",
+      "targetTime": 48.26313587958812
+    },
+    {
+      "name": "environments",
+      "targetTime": 48.96313587958812
+    },
+    {
+      "name": "nixos-config",
+      "targetTime": 49.96313587958812
+    },
+    {
+      "name": "remove_flake_section",
+      "targetTime": 52.4832854131119
+    },
+    {
+      "name": "flake up",
+      "targetTime": 53.7832854131119
+    },
+    {
+      "name": "copy-flake",
+      "targetTime": 55.10806552853236
+    },
+    {
+      "name": "pinned",
+      "targetTime": 56.66610336926137
+    },
+    {
+      "name": "exact",
+      "targetTime": 59.02790186514838
+    },
+    {
+      "name": "locked flakes out",
+      "targetTime": 65.48363702182432
+    },
+    {
+      "name": "home-manager",
+      "targetTime": 71.6782295584331
+    },
+    {
+      "name": "pathway",
+      "targetTime": 82.18802300584635
+    },
+    {
+      "name": "dev_tool",
+      "targetTime": 88.42685392328991
+    },
+    {
+      "name": "nixpkgs",
+      "targetTime": 99.6459607911044
+    },
+    {
+      "name": "pingme",
+      "targetTime": 116.70719536319733
+    },
+    {
+      "name": "remove",
+      "targetTime": 120.81048624896916
+    },
+    {
+      "name": "resources",
+      "targetTime": 127.28460622699514
+    },
+    {
+      "name": "virtual machine",
+      "targetTime": 131.28460622699518
+    },
+    {
+      "name": "theleap",
+      "targetTime": 145.94061534106382
+    },
+    {
+      "name": "rollback",
+      "targetTime": 155.37963773517018
+    },
+    {
+      "name": "subscribe!",
+      "targetTime": 168.791266090617
+    },
+    {
+      "name": "emtpye",
+      "targetTime": 169.8792651762277
+    },
+    {
+      "name": "finding shit",
+      "targetTime": 177.35098872936643
+    },
+    {
+      "name": "search interface",
+      "targetTime": 187.0360768205613
+    },
+    {
+      "name": "nix cli",
+      "targetTime": 189.7220408664064
+    },
+    {
+      "name": "mipmip",
+      "targetTime": 193.5718224783106
+    },
+    {
+      "name": "manix",
+      "targetTime": 197.94223622144804
+    },
+    {
+      "name": "nixpkgs-github",
+      "targetTime": 204.22304334976727
+    },
+    {
+      "name": "empty",
+      "targetTime": 209.44628382578875
+    },
+    {
+      "name": "join",
+      "targetTime": 216.0222238293426
+    },
+    {
+      "name": "vimjoyer",
+      "targetTime": 221.1655924392579
+    },
+    {
+      "name": "Misc",
+      "targetTime": 231.25725454713987
+    },
+    {
+      "name": "repl",
+      "targetTime": 235.30114042526915
+    },
+    {
+      "name": "buildmm",
+      "targetTime": 241.3258795336159
+    },
+    {
+      "name": "snowfall",
+      "targetTime": 247.8159418992478
+    },
+    {
+      "name": "Conclusion",
+      "targetTime": 260.22745695874806
+    },
+    {
+      "name": "support",
+      "targetTime": 270.2074022227097
+    },
+    {
+      "name": "ending",
+      "targetTime": 275.15662736656634
+    },
+    {
+      "name": "logosweep",
+      "targetTime": 276.9256886969503
+    },
+    {
+      "name": "cut",
+      "targetTime": 288.3070193793803
     }
   ],
   "seed": 2128992421
