@@ -1,0 +1,106 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "snowfall",
+      "targetTime": 0.330625576795146
+    },
+    {
+      "name": "template",
+      "targetTime": 14.849174012360864
+    },
+    {
+      "name": "bios",
+      "targetTime": 16.87376690431561
+    },
+    {
+      "name": "nix cli",
+      "targetTime": 18.354888801037475
+    },
+    {
+      "name": "audio",
+      "targetTime": 19.885732337325575
+    },
+    {
+      "name": "networking",
+      "targetTime": 20.577938536674868
+    },
+    {
+      "name": "nvidia",
+      "targetTime": 21.17212022031309
+    },
+    {
+      "name": "battery",
+      "targetTime": 22.12634515855331
+    },
+    {
+      "name": "remove icons",
+      "targetTime": 27.407018067421486
+    },
+    {
+      "name": "links",
+      "targetTime": 35.206061583257416
+    },
+    {
+      "name": "The Basics",
+      "targetTime": 38.41004034737296
+    },
+    {
+      "name": "directories",
+      "targetTime": 52.90736574947376
+    },
+    {
+      "name": "modules",
+      "targetTime": 66.59142054886144
+    },
+    {
+      "name": "module_code",
+      "targetTime": 79.75959567319543
+    },
+    {
+      "name": "packages",
+      "targetTime": 95.49697566697257
+    },
+    {
+      "name": "lib",
+      "targetTime": 104.12907685881585
+    },
+    {
+      "name": "homes",
+      "targetTime": 110.89374903563365
+    },
+    {
+      "name": "Getting help",
+      "targetTime": 127.813581266507
+    },
+    {
+      "name": "store_page",
+      "targetTime": 131.52710922516184
+    },
+    {
+      "name": "thanks",
+      "targetTime": 142.1180839020628
+    },
+    {
+      "name": "kin",
+      "targetTime": 143.8301625640646
+    },
+    {
+      "name": "aksh",
+      "targetTime": 147.12321339389484
+    },
+    {
+      "name": "lepage",
+      "targetTime": 150.10821178239055
+    },
+    {
+      "name": "thanksOut",
+      "targetTime": 154.90254498517882
+    },
+    {
+      "name": "end",
+      "targetTime": 164.69334217594403
+    }
+  ],
+  "seed": 1750582422
+}

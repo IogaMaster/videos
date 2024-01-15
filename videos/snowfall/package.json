@@ -1,0 +1,22 @@
+{
+  "name": "snowfall",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite",
+    "serve": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@motion-canvas/core": "^3.13.0",
+    "@motion-canvas/2d": "^3.13.0",
+    "@motion-canvas/ffmpeg": "^1.1.0",
+    "components": "0.0.0"
+  },
+  "devDependencies": {
+    "@motion-canvas/ui": "^3.13.0",
+    "@motion-canvas/vite-plugin": "^3.13.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.0.0"
+  }
+}
