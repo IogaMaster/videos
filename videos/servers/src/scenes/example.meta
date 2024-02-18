@@ -1,0 +1,122 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "remove logo",
+      "targetTime": 20.943146451147143
+    },
+    {
+      "name": "kexec",
+      "targetTime": 24.45460573940322
+    },
+    {
+      "name": "reboot",
+      "targetTime": 29.876857109439563
+    },
+    {
+      "name": "no drive",
+      "targetTime": 35.95475284000586
+    },
+    {
+      "name": "images",
+      "targetTime": 42.774459375130725
+    },
+    {
+      "name": "anywhere",
+      "targetTime": 51.76160204762232
+    },
+    {
+      "name": "shake",
+      "targetTime": 56.23263385011535
+    },
+    {
+      "name": "install",
+      "targetTime": 58.41465284844663
+    },
+    {
+      "name": "upload",
+      "targetTime": 59.72819750583535
+    },
+    {
+      "name": "remove icons",
+      "targetTime": 62.44188140728234
+    },
+    {
+      "name": "disko",
+      "targetTime": 63.630157066851055
+    },
+    {
+      "name": "vimj",
+      "targetTime": 70.42892878612807
+    },
+    {
+      "name": "deploy",
+      "targetTime": 73.36490929594385
+    },
+    {
+      "name": "installation",
+      "targetTime": 86.83403150570427
+    },
+    {
+      "name": "install command",
+      "targetTime": 95.05217909406564
+    },
+    {
+      "name": "hostname",
+      "targetTime": 103.43027183450823
+    },
+    {
+      "name": "copy",
+      "targetTime": 107.2508099540304
+    },
+    {
+      "name": "anywhere useage",
+      "targetTime": 116.35093792284236
+    },
+    {
+      "name": "doneinstall",
+      "targetTime": 132.9852271059015
+    },
+    {
+      "name": "deploy-rs",
+      "targetTime": 136.54317512463564
+    },
+    {
+      "name": "mkDeplot-rs",
+      "targetTime": 141.29880064710562
+    },
+    {
+      "name": "additional",
+      "targetTime": 156.36361272976615
+    },
+    {
+      "name": "testcommand",
+      "targetTime": 159.6609326777907
+    },
+    {
+      "name": "Thanks",
+      "targetTime": 166.3123225833877
+    },
+    {
+      "name": "hauskens",
+      "targetTime": 167.58473469314518
+    },
+    {
+      "name": "kinzoku",
+      "targetTime": 169.62287411146963
+    },
+    {
+      "name": "aksh1618",
+      "targetTime": 172.73391486849076
+    },
+    {
+      "name": "thanksOut",
+      "targetTime": 177.4772051202526
+    },
+    {
+      "name": "DONE!!!",
+      "targetTime": 185.48586793693738
+    }
+  ],
+  "seed": 855715182
+}
