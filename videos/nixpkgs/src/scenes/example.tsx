@@ -1,12 +1,17 @@
-import {Circle, makeScene2D} from '@motion-canvas/2d';
-import {createRef} from '@motion-canvas/core';
+import { Circle, Img, makeScene2D } from '@motion-canvas/2d';
+import { createRef, waitFor } from '@motion-canvas/core';
+import { Logo, setupView, slideIn } from 'components';
 
-export default makeScene2D(function* (view) {
-  // Create your animations here
+export default makeScene2D(function*(view) {
+    yield setupView(view);
+    const logoRef = createRef<Logo>();
+    view.add(<Logo ref={logoRef} />)
+    yield logoRef().animateToCorner();
 
-  const circle = createRef<Circle>();
 
-  view.add(<Circle ref={circle} size={320} fill={'lightseagreen'} />);
+    const nixosLogoRef = createRef<Img>();
+    view.add(<Img src={(new URL("../assets/reproducable.svg", import.meta.url)).href} ref={nixosLogoRef} scale={8} y={-2000} />)
+    yield* slideIn(nixosLogoRef)
 
-  yield* circle().scale(2, 2).to(1, 2);
+    yield* waitFor(1000)
 });
