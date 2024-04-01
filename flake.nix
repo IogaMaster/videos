@@ -16,6 +16,8 @@
             nodejs
 
             just
+
+            chromium
           ];
 
           buildInputs = with pkgs; [ ];
