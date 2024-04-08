@@ -1,5 +1,298 @@
 {
   "version": 0,
-  "timeEvents": [],
+  "timeEvents": [
+    {
+      "name": "getting started",
+      "targetTime": 20.016666666666666
+    },
+    {
+      "name": "fork",
+      "targetTime": 24.081440838434098
+    },
+    {
+      "name": "clone",
+      "targetTime": 29.834858243872564
+    },
+    {
+      "name": "gommit",
+      "targetTime": 38.64736524342777
+    },
+    {
+      "name": "main",
+      "targetTime": 46.659064349930716
+    },
+    {
+      "name": "branch",
+      "targetTime": 53.53952089682616
+    },
+    {
+      "name": "bynam",
+      "targetTime": 65.60599072497654
+    },
+    {
+      "name": "createpackage",
+      "targetTime": 69.72078174923665
+    },
+    {
+      "name": "ni",
+      "targetTime": 70.80772684921081
+    },
+    {
+      "name": "niri",
+      "targetTime": 72.48052038413715
+    },
+    {
+      "name": "package.nix",
+      "targetTime": 75.1974446446598
+    },
+    {
+      "name": "creatingpackage",
+      "targetTime": 77.71310590435425
+    },
+    {
+      "name": "stdenv",
+      "targetTime": 86.1203706340732
+    },
+    {
+      "name": "pname",
+      "targetTime": 98.06304050031486
+    },
+    {
+      "name": "v",
+      "targetTime": 107.25386216007125
+    },
+    {
+      "name": "src",
+      "targetTime": 110.14704684944003
+    },
+    {
+      "name": "fetchFromGitHub",
+      "targetTime": 114.22636155055127
+    },
+    {
+      "name": "owner",
+      "targetTime": 117.13036620346082
+    },
+    {
+      "name": "repo",
+      "targetTime": 118.01510399017809
+    },
+    {
+      "name": "rev",
+      "targetTime": 118.7892495535557
+    },
+    {
+      "name": "hash",
+      "targetTime": 121.92269588151271
+    },
+    {
+      "name": "whole",
+      "targetTime": 129.22178262193017
+    },
+    {
+      "name": "nativeBuildInputs",
+      "targetTime": 132.6199798823553
+    },
+    {
+      "name": "buildInputs",
+      "targetTime": 139.9458337355335
+    },
+    {
+      "name": "vars",
+      "targetTime": 154.98871990446355
+    },
+    {
+      "name": "build",
+      "targetTime": 171.2705791516106
+    },
+    {
+      "name": "installPhase",
+      "targetTime": 177.49905684979657
+    },
+    {
+      "name": "meta",
+      "targetTime": 190.34719070874212
+    },
+    {
+      "name": "pl",
+      "targetTime": 193.3071394291555
+    },
+    {
+      "name": "homo",
+      "targetTime": 194.01512404527952
+    },
+    {
+      "name": "license",
+      "targetTime": 199.1283462728419
+    },
+    {
+      "name": "mainprogram",
+      "targetTime": 227.32973348178203
+    },
+    {
+      "name": "platforms",
+      "targetTime": 234.1735847709809
+    },
+    {
+      "name": "maintainers",
+      "targetTime": 246.2879882024364
+    },
+    {
+      "name": "asdjk",
+      "targetTime": 259.8358419677726
+    },
+    {
+      "name": "mainer",
+      "targetTime": 263.9838605101932
+    },
+    {
+      "name": "maintainterssdf",
+      "targetTime": 267.60725929669525
+    },
+    {
+      "name": "email",
+      "targetTime": 270.27110560785
+    },
+    {
+      "name": "name",
+      "targetTime": 270.8996345560769
+    },
+    {
+      "name": "ghu",
+      "targetTime": 272.8472085235379
+    },
+    {
+      "name": "ghid",
+      "targetTime": 273.7834547693342
+    },
+    {
+      "name": "get ",
+      "targetTime": 277.05946601960164
+    },
+    {
+      "name": "windowclose",
+      "targetTime": 279.02053626654583
+    },
+    {
+      "name": "commit with",
+      "targetTime": 280.5355963984923
+    },
+    {
+      "name": "with",
+      "targetTime": 289.87310784556064
+    },
+    {
+      "name": "examples",
+      "targetTime": 295.94648721787036
+    },
+    {
+      "name": "sdajkl",
+      "targetTime": 297.629057892548
+    },
+    {
+      "name": "cerqat",
+      "targetTime": 304.23087693141133
+    },
+    {
+      "name": "baller",
+      "targetTime": 319.29465489027876
+    },
+    {
+      "name": "fuinction",
+      "targetTime": 323.81348336305217
+    },
+    {
+      "name": "fuinctio",
+      "targetTime": 325.3769603431956
+    },
+    {
+      "name": "skibidi",
+      "targetTime": 333.15794176854956
+    },
+    {
+      "name": "like so",
+      "targetTime": 335.8628801799714
+    },
+    {
+      "name": "skibidi wagort",
+      "targetTime": 338.5240809435287
+    },
+    {
+      "name": "etiquette",
+      "targetTime": 356.8546883979576
+    },
+    {
+      "name": "ping",
+      "targetTime": 366.5200080349711
+    },
+    {
+      "name": "tools",
+      "targetTime": 371.0378479621829
+    },
+    {
+      "name": "statix",
+      "targetTime": 373.6371050529545
+    },
+    {
+      "name": "deadnix",
+      "targetTime": 375.85467125139184
+    },
+    {
+      "name": "gammer",
+      "targetTime": 378.1642111588254
+    },
+    {
+      "name": "fmt",
+      "targetTime": 385.23628230597694
+    },
+    {
+      "name": "int",
+      "targetTime": 394.5296606978098
+    },
+    {
+      "name": "srcsd",
+      "targetTime": 396.14844958247113
+    },
+    {
+      "name": "eqjk",
+      "targetTime": 418.43113117607896
+    },
+    {
+      "name": "nix-update",
+      "targetTime": 419.6048318179739
+    },
+    {
+      "name": "update",
+      "targetTime": 428.2445714543219
+    },
+    {
+      "name": "nix-updatesd",
+      "targetTime": 431.528579359805
+    },
+    {
+      "name": "Thanks",
+      "targetTime": 443.2272184919392
+    },
+    {
+      "name": "hauskens",
+      "targetTime": 444.6272184919392
+    },
+    {
+      "name": "kinzoku",
+      "targetTime": 446.82909416007817
+    },
+    {
+      "name": "aksh1618",
+      "targetTime": 450.10215359511227
+    },
+    {
+      "name": "thanksOut",
+      "targetTime": 453.5664539341016
+    },
+    {
+      "name": "DONE!!!",
+      "targetTime": 462.27956392311484
+    }
+  ],
   "seed": 559741202
 }
