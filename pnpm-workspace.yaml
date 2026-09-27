@@ -2,3 +2,5 @@ packages:
   - 'toolkit'
   - 'videos/*'
 
+allowBuilds:
+  pnpm: false

@@ -15,6 +15,6 @@ create name:
 # Edit an existing video
 edit name:
     @echo "🚀 Spawning server..."
-    pnpm --filter {{name}} start & \
-    sleep 1.5 && \
-    chromium --app=http://localhost:9000
+    chromium --app=http://localhost:9000 & \
+    pnpm --filter {{name}} install && \
+    pnpm --filter {{name}} start \

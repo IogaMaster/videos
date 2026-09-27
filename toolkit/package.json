@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "main": "index.ts",
-  "dependencies": {}
+  "source": "index.ts",
+  "dependencies": {
+    "@canvas-commons/2d": "^0.4.0",
+    "@canvas-commons/core": "^0.4.0",
+    "three": "^0.186.1"
+  }
 }

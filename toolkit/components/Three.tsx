@@ -27,14 +27,14 @@ export class Three extends Layout {
     private readonly renderCount = createSignal(0);
     public onRender: RenderCallback;
 
-    public rerender() {
-        this.renderCount(this.renderCount() + 1);
-    }
-
     public constructor({ onRender, ...props }: ThreeProps) {
         super(props);
         this.renderer = borrow();
         this.onRender = onRender ?? ((renderer, scene, camera) => renderer.render(scene, camera));
+    }
+
+    public rerender() {
+        this.renderCount(this.renderCount() + 1);
     }
 
     protected override draw(context: CanvasRenderingContext2D) {

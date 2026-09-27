@@ -1,0 +1,24 @@
+{
+  "name": "3dTest",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "start": "vite",
+    "serve": "vite",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@canvas-commons/2d": "^0.4.0",
+    "@canvas-commons/core": "^0.4.0",
+    "@canvas-commons/webcodecs": "^0.4.0",
+    "pnpm": "^12.6.0",
+    "start": "^5.1.0",
+    "toolkit": "workspace:*"
+  },
+  "devDependencies": {
+    "@canvas-commons/editor": "^0.4.0",
+    "@canvas-commons/vite-plugin": "^0.4.0",
+    "typescript": "^5.2.2",
+    "vite": "^8.0.0"
+  }
+}
