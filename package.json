@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@dimforge/rapier2d": "^0.21.0",
+    "@dimforge/rapier3d-compat": "^0.21.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.186.0"
+  }
+}
