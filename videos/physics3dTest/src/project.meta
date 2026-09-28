@@ -21,11 +21,16 @@
     "resolutionScale": 1,
     "colorSpace": "srgb",
     "exporter": {
-      "name": "@canvas-commons/core/image-sequence",
+      "name": "@canvas-commons/webcodecs",
       "options": {
-        "fileType": "image/png",
-        "quality": 100,
-        "groupByScene": false
+        "videoCodec": "avc",
+        "videoQuality": "veryHigh",
+        "keyframeInterval": 2,
+        "realtime": false,
+        "audioCodec": "aac",
+        "fastStart": true,
+        "includeAudio": true,
+        "audioSampleRate": 48000
       }
     }
   }

@@ -1,8 +1,17 @@
-import { makeScene2D, Node } from '@canvas-commons/2d';
-import { createRef, loop, waitFor } from '@canvas-commons/core';
+import { makeScene2D, Node, Txt, Line, Rect } from '@canvas-commons/2d';
+import { createRef, loop, waitFor, createRef as createSignalRef } from '@canvas-commons/core';
 import { Three, PhysicsManager } from 'toolkit';
 import * as THREE from 'three';
 import { init3DPhysics, world, centralBody, sphereMesh, cubeObjects } from '../simulations/main';
+
+interface TrackedCubeUI {
+    containerRef: ReturnType<typeof createSignalRef<Node>>;
+    textRef: ReturnType<typeof createSignalRef<Txt>>;
+    arrowRef: ReturnType<typeof createSignalRef<Line>>;
+    mesh: THREE.Mesh;
+    color: string;
+    prevPosition: THREE.Vector3;
+}
 
 export default makeScene2D(function*(view) {
     const three = createRef<Three>();
@@ -16,7 +25,6 @@ export default makeScene2D(function*(view) {
     const ambientLight = new THREE.AmbientLight(0xffffff, 0.4);
     threeScene.add(ambientLight);
 
-    // Directional Light with massive shadow range/frustum
     const dirLight = new THREE.DirectionalLight(0xffffff, 1.8);
     dirLight.position.set(15, 30, 15);
     dirLight.castShadow = true;
@@ -33,7 +41,6 @@ export default makeScene2D(function*(view) {
     dirLight.shadow.bias = -0.0005;
     threeScene.add(dirLight);
 
-    // Huge Plane with ShadowMaterial (seamless background blending + massive shadows)
     const groundGeo = new THREE.PlaneGeometry(150, 150);
     const groundMat = new THREE.ShadowMaterial({ opacity: 0.4 });
     const groundMesh = new THREE.Mesh(groundGeo, groundMat);
@@ -57,13 +64,13 @@ export default makeScene2D(function*(view) {
         });
     });
 
-    const gravitationalStrength = 15.0;
+    const gravitationalStrength = 10.0;
     const sphereRadius = 0.8;
     const boxHalfSize = 0.35;
     const minSafeDistance = sphereRadius + boxHalfSize + 0.4;
-    const repulsionStrength = 2.5;
-    const tangentialBoostStrength = 1.0; // Controls how violently they whip around on impact
-    const totalFrames = 400;
+    const repulsionStrength = 1.5;
+    const tangentialBoostStrength = 1.2;
+    const totalFrames = 60 * 30;
 
     manager.customBake(totalFrames, (frameIndex) => {
         const t = (frameIndex / totalFrames) * Math.PI * 2;
@@ -81,13 +88,11 @@ export default makeScene2D(function*(view) {
             const distance = Math.sqrt(dirX * dirX + dirY * dirY + dirZ * dirZ);
 
             if (distance < minSafeDistance) {
-                // 1. Radial push outward to prevent clipping
                 const pushFactor = (minSafeDistance - distance) * repulsionStrength;
                 const rx = (-dirX / distance) * pushFactor;
                 const ry = (-dirY / distance) * pushFactor;
                 const rz = (-dirZ / distance) * pushFactor;
 
-                // 2. Tangential velocity boost (spin effect around the center)
                 const cx = -dirX;
                 const cz = -dirZ;
                 let tx = -cz;
@@ -98,14 +103,12 @@ export default makeScene2D(function*(view) {
                     tz /= tLen;
                 }
 
-                // Apply combined radial repulsion + tangential whip impulse
                 body.applyImpulse({
                     x: rx + tx * tangentialBoostStrength,
                     y: ry,
                     z: rz + tz * tangentialBoostStrength,
                 }, true);
             } else {
-                // Standard gravitational pull when outside the threshold
                 const distanceSq = distance * distance;
                 const forceMagnitude = (gravitationalStrength / distanceSq) * body.mass();
 
@@ -120,6 +123,28 @@ export default makeScene2D(function*(view) {
         world.step();
     });
 
+    // Setup 5 tracked UI elements mapped to the first 5 cubes
+    const trackedCount = 5;
+    const trackedCubes: TrackedCubeUI[] = [];
+
+    for (let i = 0; i < trackedCount; i++) {
+        const obj = cubeObjects[i];
+        const mat = obj.mesh.material as THREE.MeshStandardMaterial;
+        const color = '#' + mat.color.getHexString();
+
+        const initialPos = new THREE.Vector3();
+        obj.mesh.getWorldPosition(initialPos);
+
+        trackedCubes.push({
+            containerRef: createSignalRef<Node>(),
+            textRef: createSignalRef<Txt>(),
+            arrowRef: createSignalRef<Line>(),
+            mesh: obj.mesh,
+            color,
+            prevPosition: initialPos,
+        });
+    }
+
     view.add(
         <Node>
             <Three
@@ -131,6 +156,42 @@ export default makeScene2D(function*(view) {
                 scene={threeScene}
                 camera={camera}
             />
+
+            {/* Render 5 Unique Arrow Overlays and Label Containers */}
+            {trackedCubes.map((item, index) => (
+                <Node key={index}>
+                    <Line
+                        ref={item.arrowRef}
+                        points={[[0, 0], [0, 0]]}
+                        stroke={item.color}
+                        lineWidth={3}
+                        endArrow
+                        arrowSize={10}
+                        zIndex={9}
+                    />
+                    <Node ref={item.containerRef} zIndex={10}>
+                        <Rect
+                            width={160}
+                            height={64}
+                            fill={'#181825'}
+                            stroke={item.color}
+                            lineWidth={2}
+                            radius={10}
+                            shadowBlur={16}
+                            shadowColor={'rgba(0, 0, 0, 0.6)'}
+                        />
+                        <Txt
+                            ref={item.textRef}
+                            text={''}
+                            fill={'#cdd6f4'}
+                            fontFamily={'JetBrains Mono, monospace'}
+                            fontSize={16}
+                            fontWeight={700}
+                            lineHeight={22}
+                        />
+                    </Node>
+                </Node>
+            ))}
         </Node>
     );
 
@@ -138,6 +199,38 @@ export default makeScene2D(function*(view) {
 
     yield loop(function*() {
         manager.sync(currentFrame);
+
+        // Update positions, velocities, and project UI elements for all 5 cubes
+        trackedCubes.forEach((item, index) => {
+            const currentPos = new THREE.Vector3();
+            item.mesh.getWorldPosition(currentPos);
+
+            const velocityVector = currentPos.clone().sub(item.prevPosition).divideScalar(1 / 60);
+            const speed = velocityVector.length().toFixed(1);
+            item.prevPosition.copy(currentPos);
+
+            const startNDC = currentPos.clone().project(camera);
+            const startX = (startNDC.x * 1920) / 2;
+            const startY = -(startNDC.y * 1080) / 2;
+
+            const endPos = currentPos.clone().add(velocityVector.clone().multiplyScalar(0.25));
+            const endNDC = endPos.clone().project(camera);
+            const endX = (endNDC.x * 1920) / 2;
+            const endY = -(endNDC.y * 1080) / 2;
+
+            if (item.arrowRef()) {
+                item.arrowRef().points([[startX, startY], [endX, endY]]);
+            }
+
+            if (item.containerRef()) {
+                item.containerRef().position([startX + 80, startY - 48]);
+            }
+
+            if (item.textRef()) {
+                item.textRef().text(`CUBE ${index}\n${speed} m/s`);
+            }
+        });
+
         currentFrame = (currentFrame + 1) % totalFrames;
 
         threeScene.updateWorldMatrix(true, true);
@@ -147,5 +240,5 @@ export default makeScene2D(function*(view) {
         yield;
     });
 
-    yield* waitFor(30);
+    yield* waitFor(10);
 });
