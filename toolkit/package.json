@@ -7,6 +7,10 @@
   "dependencies": {
     "@canvas-commons/2d": "^0.4.0",
     "@canvas-commons/core": "^0.4.0",
+    "@dimforge/rapier2d": "^0.21.0",
+    "@dimforge/rapier2d-compat": "^0.21.0",
+    "@dimforge/rapier3d": "^0.21.0",
+    "@dimforge/rapier3d-compat": "^0.21.0",
     "three": "^0.186.1"
   }
 }
