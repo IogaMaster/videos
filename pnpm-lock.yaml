@@ -166,6 +166,40 @@ importers:
         specifier: ^8.0.0
         version: 8.3.1
 
+  videos/physics3dTest:
+    dependencies:
+      '@canvas-commons/2d':
+        specifier: ^0.4.0
+        version: 0.4.0
+      '@canvas-commons/core':
+        specifier: ^0.4.0
+        version: 0.4.0
+      '@canvas-commons/webcodecs':
+        specifier: ^0.4.0
+        version: 0.4.0(vite@8.3.1)
+      '@dimforge/rapier2d-compat':
+        specifier: ^0.21.0
+        version: 0.21.0
+      '@dimforge/rapier3d-compat':
+        specifier: ^0.21.0
+        version: 0.21.0
+      toolkit:
+        specifier: workspace:*
+        version: link:../../toolkit
+    devDependencies:
+      '@canvas-commons/editor':
+        specifier: ^0.4.0
+        version: 0.4.0
+      '@canvas-commons/vite-plugin':
+        specifier: ^0.4.0
+        version: 0.4.0(vite@8.3.1)
+      typescript:
+        specifier: ^5.2.2
+        version: 5.9.3
+      vite:
+        specifier: ^8.0.0
+        version: 8.3.1
+
 packages:
 
   '@canvas-commons/2d@0.4.0':
