@@ -24,7 +24,7 @@
       "name": "@canvas-commons/webcodecs",
       "options": {
         "videoCodec": "avc",
-        "videoQuality": "low",
+        "videoQuality": "veryHigh",
         "keyframeInterval": 2,
         "realtime": false,
         "audioCodec": "aac",

@@ -1,10 +1,11 @@
 import { computed, initial, Layout, LayoutProps, signal } from '@canvas-commons/2d';
 import { createSignal, SimpleSignal } from '@canvas-commons/core';
-import * as THREE from 'three';
-import { Camera, Color, OrthographicCamera, PerspectiveCamera, Scene, WebGLRenderer } from 'three';
+import * as THREE from 'three/webgpu';
+import { Camera, Color, OrthographicCamera, PerspectiveCamera, Scene } from 'three/webgpu';
+import { WebGPURenderer } from 'three/webgpu';
 
 interface RenderCallback {
-    (renderer: WebGLRenderer, scene: Scene, camera: Camera): void;
+    (renderer: WebGPURenderer, scene: Scene, camera: Camera): void | Promise<void>;
 }
 
 export interface ThreeProps extends LayoutProps {
@@ -23,14 +24,24 @@ export class Three extends Layout {
     @initial(null) @signal() public declare readonly background: SimpleSignal<string | null, this>;
     @initial(1) @signal() public declare readonly zoom: SimpleSignal<number, this>;
 
-    private readonly renderer: WebGLRenderer;
+    private renderer: WebGPURenderer | null = null;
+    private isInitialized = false;
     private readonly renderCount = createSignal(0);
     public onRender: RenderCallback;
 
     public constructor({ onRender, ...props }: ThreeProps) {
         super(props);
-        this.renderer = borrow();
         this.onRender = onRender ?? ((renderer, scene, camera) => renderer.render(scene, camera));
+
+        // Begin asynchronous renderer setup
+        borrow().then(async (res) => {
+            this.renderer = res;
+            if (!this.renderer.hasFeature('adapter')) {
+                await this.renderer.init();
+            }
+            this.isInitialized = true;
+            this.rerender();
+        });
     }
 
     public rerender() {
@@ -44,9 +55,12 @@ export class Three extends Layout {
         const quality = this.quality();
         const scene = this.configuredScene();
         const camera = this.configuredCamera();
-        const renderer = this.configuredRenderer();
+        const renderer = this.renderer;
 
-        if (width > 0 && height > 0 && scene && camera) {
+        if (this.isInitialized && renderer && width > 0 && height > 0 && scene && camera) {
+            const size = this.computedSize();
+            renderer.setSize(size.width * quality, size.height * quality, false);
+
             this.onRender(renderer, scene, camera);
             context.imageSmoothingEnabled = false;
             context.drawImage(
@@ -58,14 +72,6 @@ export class Three extends Layout {
             );
         }
         super.draw(context);
-    }
-
-    @computed()
-    private configuredRenderer(): WebGLRenderer {
-        const size = this.computedSize();
-        const quality = this.quality();
-        this.renderer.setSize(size.width * quality, size.height * quality, false);
-        return this.renderer;
     }
 
     @computed()
@@ -100,32 +106,32 @@ export class Three extends Layout {
     }
 
     public override dispose() {
-        dispose(this.renderer);
+        if (this.renderer) {
+            dispose(this.renderer);
+        }
         super.dispose();
     }
 }
 
-const pool: WebGLRenderer[] = [];
-function borrow() {
+const pool: WebGPURenderer[] = [];
+async function borrow(): Promise<WebGPURenderer> {
     if (pool.length) {
         return pool.pop()!;
     } else {
-        const renderer = new WebGLRenderer({
+        const renderer = new WebGPURenderer({
             canvas: document.createElement('canvas'),
             antialias: true,
             alpha: true,
-            stencil: true,
-            preserveDrawingBuffer: true, // Crucial to prevent empty frame blitting
+            preserveDrawingBuffer: true,
         });
         renderer.toneMapping = THREE.NoToneMapping;
         renderer.outputColorSpace = THREE.SRGBColorSpace;
         renderer.setClearColor(0x000000, 0);
-        renderer.shadowMap.enabled = true;
-        renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        await renderer.init();
         return renderer;
     }
 }
 
-function dispose(renderer: WebGLRenderer) {
+function dispose(renderer: WebGPURenderer) {
     pool.push(renderer);
 }

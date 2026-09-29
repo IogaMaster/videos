@@ -31,6 +31,8 @@
 
             # Video backend needed for Canvas Commons rendering
             ffmpeg-headless
+
+            qrencode # presentations
           ];
 
           buildInputs = with pkgs; [ ];

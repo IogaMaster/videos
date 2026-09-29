@@ -10,7 +10,7 @@ import sharkUrl from '../assets/shork.gltf?url';
 
 const WIDTH = 1920;
 const HEIGHT = 1080;
-const BOID_COUNT = 400;
+const BOID_COUNT = 500;
 const BOUNDS = new THREE.Vector3(14, 8, 10);
 const CELL_SIZE = 3.0;
 
@@ -306,7 +306,7 @@ class Predator {
 // SCENE SETUP & MAIN LOOP
 // ==========================================
 export default makeScene2D(function*(view) {
-    const random = createSeededRandom(4223);
+    const random = createSeededRandom(6764);
     const three = createRef<Three>();
     const scene = new THREE.Scene();
 
@@ -392,5 +392,5 @@ export default makeScene2D(function*(view) {
         yield;
     });
 
-    yield* waitFor(10);
+    yield* waitFor(30);
 });
