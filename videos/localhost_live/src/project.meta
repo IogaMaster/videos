@@ -14,18 +14,23 @@
   },
   "preview": {
     "fps": 60,
-    "resolutionScale": 1
+    "resolutionScale": 0.5
   },
   "rendering": {
     "fps": 60,
     "resolutionScale": 1,
     "colorSpace": "srgb",
     "exporter": {
-      "name": "@canvas-commons/core/image-sequence",
+      "name": "@canvas-commons/webcodecs",
       "options": {
-        "fileType": "image/png",
-        "quality": 100,
-        "groupByScene": false
+        "videoCodec": "avc",
+        "videoQuality": "low",
+        "keyframeInterval": 2,
+        "realtime": false,
+        "audioCodec": "aac",
+        "fastStart": true,
+        "includeAudio": true,
+        "audioSampleRate": 48000
       }
     }
   }

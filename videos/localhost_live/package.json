@@ -1,5 +1,5 @@
 {
-  "name": "3dTest",
+  "name": "localhost_live",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -13,8 +13,6 @@
     "@canvas-commons/webcodecs": "^0.4.0",
     "@dimforge/rapier2d-compat": "^0.21.0",
     "@dimforge/rapier3d-compat": "^0.21.0",
-    "pnpm": "^12.6.0",
-    "start": "^5.1.0",
     "toolkit": "workspace:*"
   },
   "devDependencies": {
