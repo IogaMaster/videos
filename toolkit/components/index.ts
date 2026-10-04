@@ -6,3 +6,4 @@ export { GridBackground } from "./GridBackground";
 export { Gauge } from "./Gauge";
 export { Stopwatch } from "./Stopwatch";
 export { Spotlight } from "./Spotlight";
+export * from "./Pop";

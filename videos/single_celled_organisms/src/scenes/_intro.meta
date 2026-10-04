@@ -1,0 +1,14 @@
+{
+  "version": 0,
+  "timeEvents": [
+    {
+      "name": "fish_enter",
+      "targetTime": 0.6998472079172451
+    },
+    {
+      "name": "title",
+      "targetTime": 2.8572868210111526
+    }
+  ],
+  "seed": 1729062500
+}
